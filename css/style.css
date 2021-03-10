@@ -28,8 +28,8 @@
     :root {
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
-        --fs-h3: 1.5rem;
-        --fs-body: 1.125rem;
+        --fs-h3: 2rem;
+        --fs-body: 1.5rem;
     }
 }
 
@@ -198,7 +198,7 @@ header {
 .hamburger::before,
 .hamburger::after {
     background: var(--clr-accent);
-    width: 4em;
+    width: 6em;
     height: 3px;
     border-radius: 1em;
     transition: transform 250ms ease-in-out;
@@ -262,6 +262,8 @@ header {
 
 /* About Me section */
 
+
+
 .about-me {
     background-color: var(--clr-dark);
     background-image: url(../img/Computer.jpg);
@@ -270,6 +272,9 @@ header {
     color: var(--clr-light);
     text-align: center;
 }
+    ul {
+        text-align: left;
+    }
 
 .section__title--about {
     color: var(--clr-accent);
@@ -287,11 +292,16 @@ header {
 }
 
 .about_me_body {
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
+
+
+    
+    /* padding-right: 80px; */
+
 }
 
-@media (min-width: 800px) {
+/* @media (min-width: 600px) {
     .about {
         display: flex;
         max-width: 1500px;
@@ -301,7 +311,7 @@ header {
     ul {
         text-align: left;
     }
-}
+} */
 
 .my-projects {
     background-color: var(--clr-light);
