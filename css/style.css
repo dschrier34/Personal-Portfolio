@@ -48,11 +48,11 @@ body {
     line-height: 1.6;
 
 }
-
+/* 
 img {
     display: block;
     max-width: 100%;
-}
+} */
 
 strong {
     font-weight: var(--fw-bold)
@@ -191,7 +191,8 @@ header {
 
 .hamburger {    
     display: block;
-    position: relative;    
+    position: relative;  
+    margin-top: 15px;  
 }
 
 .hamburger,
@@ -294,12 +295,93 @@ header {
 .about_me_body {
     max-width: 600px;
     margin: 0 auto;
+}
 
+.project-slider {
+    max-width: 1200px;    
+    margin: 40px auto; 
+    position: relative;
+   
+}
 
-    
-    /* padding-right: 80px; */
+.project-slider-items_title{
+    color: var(--clr-accent);
+    position: relative;
+    text-align: center;
+}
+
+.project-slider-items_title::after{
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: currentColor;
+    opacity: 0.35;
+}
+.project-slider .left-slide, .project-slider .right-slide {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #444444;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 20px;
+    top: 50%;
+    cursor: pointer;
+    margin-top: -20px;
+    text-align: center;
+    line-height: 40px;
+    transition: all .25s ease;
 
 }
+
+.project-slider .left-slide:hover, .project-slider .right-slide:hover{
+    background-color: var(--clr-accent);
+}
+
+.project-slider .left-slide{
+    left: 175px;
+}
+
+.project-slider .right-slide{
+    right: 175px;
+}
+
+.project-slider .project-slider-items .slider-item {
+    display: none;
+    position: relative;
+}
+
+.project-slider .project-slider-items .slider-item .caption {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    bottom: -10px;
+    left: 0px;
+    background-color: rgba (0,0,0,.5);
+    line-height: 60px;
+    text-align: center;
+    color: var(--clr-accent);
+    font-size: 30px;
+}
+
+.project-slider .project-slider-items .slider-item.active {
+    display: block;
+}
+
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+}
+
+    
+    
+
 
 /* @media (min-width: 600px) {
     .about {
@@ -313,19 +395,19 @@ header {
     }
 } */
 
-.my-projects {
+/* .my-projects {
     background-color: var(--clr-light);
     color: var(--clr-dark);
     text-align: center;
-}
-
+} */
+/* 
 .portfolio {
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 1em;
 
-}
+} */
 
 /*footer */
 
