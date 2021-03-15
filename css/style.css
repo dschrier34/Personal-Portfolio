@@ -48,11 +48,6 @@ body {
     line-height: 1.6;
 
 }
-/* 
-img {
-    display: block;
-    max-width: 100%;
-} */
 
 strong {
     font-weight: var(--fw-bold)
@@ -82,8 +77,6 @@ h2 {
 h3 {
     font-size: var(--fs-h3)
 }
-
-
 .section__title {
     margin-bottom: .05em;
 }
@@ -260,10 +253,7 @@ header {
     }
 }
 
-
 /* About Me section */
-
-
 
 .about-me {
     background-color: var(--clr-dark);
@@ -333,7 +323,6 @@ header {
     text-align: center;
     line-height: 40px;
     transition: all .25s ease;
-
 }
 
 .project-slider .left-slide:hover, .project-slider .right-slide:hover{
@@ -378,37 +367,6 @@ img {
     width: 50%;
     
 }
-
-    
-    
-
-
-/* @media (min-width: 600px) {
-    .about {
-        display: flex;
-        max-width: 1500px;
-        margin: 0 auto;
-    }
-
-    ul {
-        text-align: left;
-    }
-} */
-
-/* .my-projects {
-    background-color: var(--clr-light);
-    color: var(--clr-dark);
-    text-align: center;
-} */
-/* 
-.portfolio {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 1em;
-
-} */
-
 /*footer */
 
 .footer {
